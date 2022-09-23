@@ -38,7 +38,9 @@ export const NextButtonContainer = styled.div`
     @media(min-width: 320px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
+    width: 21.8125rem;
   }
 `
 export const NextButton = styled.button`
@@ -49,8 +51,13 @@ export const NextButton = styled.button`
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-  }
+    width: 100%;
+    transition: 0.2s;
 
+    :hover {
+      opacity:  0.8;
+    }
+  }
 `
 export const IconNextContainer = styled.div`
   @media(min-width: 320px) {
@@ -58,6 +65,7 @@ export const IconNextContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 
     width: 3rem;
     height: 3rem;
@@ -67,7 +75,28 @@ export const IconNextContainer = styled.div`
     border-radius: 10px;
   }
 `
-
 export const NextInfoText = styled.div`
+  @media(min-width: 320px) {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  h2 {
+    color: ${({ theme }) => theme.colors.primary.purpleDark};
+    margin-left: 1.25rem;
+  }
+
+  p {
+    margin-left: 1.25rem;
+    font-size: 0.875rem;
+    color: ${({ theme }) => theme.colors.neutrals.darkOne}
+  }
+}
+`
+export const ArrowIcon = styled.div`
+  @media(min-width: 320px) {
+    margin-right: -115px;
+  }
 `

@@ -1,6 +1,7 @@
 import * as SC from "./styles";
 
 import { HiOutlineCalendar, HiOutlineLocationMarker } from "react-icons/hi";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 export const BirthdayBash = () => {
   return (
@@ -27,9 +28,13 @@ export const BirthdayBash = () => {
             </SC.IconNextContainer>
             <SC.NextInfoText>
               <h2>18 August 6:00PM</h2>
-              <p>to 19 August 1:00PM UTC +10</p>
+              <p>
+                to <strong>19 August 1:00PM UTC +10</strong>
+              </p>
             </SC.NextInfoText>
-            <div>{">"}</div>
+            <SC.ArrowIcon>
+              <RiArrowRightSLine size={28} color="#BDBDBD" />
+            </SC.ArrowIcon>
           </SC.NextButton>
 
           <SC.NextButton>
@@ -37,10 +42,12 @@ export const BirthdayBash = () => {
               <HiOutlineLocationMarker size={23} color="#8456EC" />
             </SC.IconNextContainer>
             <SC.NextInfoText>
-              <h2>18 August 6:00PM</h2>
-              <p>to 19 August 1:00PM UTC +10</p>
+              <h2>Street name</h2>
+              <p>Suburb, State, Postcode</p>
             </SC.NextInfoText>
-            <div>{">"}</div>
+            <SC.ArrowIcon>
+              <RiArrowRightSLine size={28} color="#BDBDBD" />
+            </SC.ArrowIcon>
           </SC.NextButton>
         </SC.NextButtonContainer>
       </SC.Content>
